@@ -76,6 +76,31 @@ header{
                     height: 20%;
                     width: 45%;
                 }
+                
+            }
+            form{
+                ul{
+                    li{
+                        label{
+                            font-family: Montserrat-Bold;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: #3870bf;
+                        border-radius: 30px;
+                        height: 20%;
+                        width: 45%;
+                        }
+                        input{
+                            font-family: Montserrat-Bold;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: #3870bf;
+                        border-radius: 30px;
+                        height: 20%;
+                        width: 45%;
+                        }
+                    }
+                }
             }
             .other{
                 display: flex;

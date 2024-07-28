@@ -1,22 +1,23 @@
-let button = document.querySelector('.button button');
-let form= document.querySelector('.button form');
-let efect= document.getElementById('2');
-let cancel= document.getElementById('x');
+let register = document.getElementById('bookin');
+let login = document.getElementById('getInto');
+let FormLogin = document.getElementById('bookin_2');
+let FormRegister = document.getElementById('getInto_2');
 
-console.log(button); 
+console.log(register,login);
+console.log(FormLogin,FormRegister); 
 
 // Mostrar el formulario 
 function showForm(){
-    form.classList.toggle('display');
-    efect.classList.toggle('display');
-    button.style.cssText = "transform: rotate(-90deg) translate(0,-260px);";
+    register.classList.toggle('display')
+    login.classList.toggle('display');
+    FormRegister.classList.toggle('display');
 }
 // Regresar el boton al origen.
-function moveTo(){
-    button.style.cssText = "transform: rotate(-90deg) translate(0,40px);";
+function Login(){
+    register.classList.toggle('display')
+    login.classList.toggle('display');
+    FormLogin.classList.toggle('display');
 }
 
-button.addEventListener('click',showForm);
-button.addEventListener('mouseover',showForm);
-cancel.addEventListener('click',showForm);
-cancel.addEventListener('click',moveTo);
+register.addEventListener('click',showForm);
+login.addEventListener('click',Login);

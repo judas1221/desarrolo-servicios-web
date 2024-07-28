@@ -1,0 +1,206 @@
+/*estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  letter-spacing: 0;
+  line-height: 24px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.display {
+  display: none;
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+header .init {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+header .init .first {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 0px;
+}
+header .init .first img {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header .init .login {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00adef;
+  padding: 10%;
+  border-radius: 10% 0% 0% 10%;
+}
+header .init .login .one {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  background-color: #00adef;
+  padding: 5%;
+}
+header .init .login .one h1 {
+  font-family: Playfair;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+header .init .login .register {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  background-color: #00adef;
+  padding: 5%;
+}
+header .init .login .register button {
+  font-family: Montserrat-Bold;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3870bf;
+  border-radius: 30px;
+  height: 20%;
+  width: 45%;
+}
+header .init .login .access {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  background-color: #00adef;
+  padding: 5%;
+}
+header .init .login .access button {
+  font-family: Montserrat-Bold;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3870bf;
+  border-radius: 30px;
+  height: 20%;
+  width: 45%;
+}
+header .init .login .other {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  background-color: #00adef;
+  padding: 5%;
+}
+header .init .login .other h2 {
+  font-family: Montserrat-Bold;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+header .init .login .icons {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  flex-direction: row;
+  justify-content: center;
+}
+header .init .login .icons ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+header .init .login .icons ul li {
+  padding: 5%;
+}
+header .init .login .icons ul li a img {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (min-width: 900px) {
+  header .init {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .init .first {
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+    padding: 5% 1%;
+  }
+  header .init .first img {
+    align-items: center;
+    width: 60%;
+    height: 60%;
+  }
+  header .init .login {
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    border-radius: 10% 10% 0% 0%;
+  }
+  header .init .login .register {
+    flex-direction: row;
+  }
+  header .init .login .register button {
+    width: 30%;
+  }
+  header .init .login .access {
+    flex-direction: row;
+  }
+  header .init .login .access button {
+    width: 30%;
+  }
+  header .init .login .icons ul li a img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*variables*/
+@font-face {
+  font-family: Playfair;
+  src: url(/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(/fonts/Montserrat_Font/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-regular;
+  src: url(/fonts/Montserrat_Font/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(/fonts/Montserrat_Font/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(/fonts/Montserrat_Font/Montserrat-Medium.ttf);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,170 @@
+header{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    .init{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .first{
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 140px 0px;
+            img{
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .login{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #00adef;
+            padding: 10%;
+            border-radius: 10% 0% 0% 10%;
+            .one{
+                display: flex;
+                width: 100%;
+                height: 25%;
+                justify-content: center;
+                background-color: #00adef;
+                padding: 5%;
+                h1{
+                    font-family: Playfair;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+            }
+            .register{
+                display: flex;
+                width: 100%;
+                height: 25%;
+                justify-content: center;
+                background-color: #00adef; 
+                padding: 5%;
+                button{
+                    font-family: Montserrat-Bold;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #3870bf;
+                    border-radius: 30px;
+                    height: 20%;
+                    width: 45%;
+                }
+            }
+            .access{
+                display: flex;
+                width: 100%;
+                height: 25%;
+                justify-content: center;
+                background-color: #00adef;
+                padding: 5%;
+                button{
+                    font-family: Montserrat-Bold;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #3870bf;
+                    border-radius: 30px;
+                    height: 20%;
+                    width: 45%;
+                }
+            }
+            .other{
+                display: flex;
+                width: 100%;
+                height: 25%;
+                justify-content: center; 
+                background-color: #00adef;
+                padding: 5%;
+                h2{
+                    font-family: Montserrat-Bold;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #ffffff;
+                }          
+            } 
+            .icons{
+                display: flex;
+                width: 100%;
+                height: 10%;
+                flex-direction: row;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 70%;
+                    li{
+                        padding: 5%;
+                        a{
+                            img{
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    } 
+                }
+            }
+        }       
+    }
+} 
+@media screen and (min-width: 900px){
+    header{
+        .init{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .first{
+                width: 100%;
+                height: 30%;
+                flex-direction: column;
+                padding: 5% 1%;
+                img{
+                    align-items: center;
+                    width: 60%;
+                    height: 60%;
+                }
+            }
+            .login{
+                width: 100%;
+                height: 70%;
+                flex-direction: column;
+                border-radius: 10% 10% 0% 0%;
+                .register{
+                    flex-direction: row;
+                    button{
+                        width: 30%;
+                    }   
+                }
+                .access{
+                    flex-direction: row;
+                    button{
+                        width: 30%;
+                    }
+                }
+                .icons{
+                    ul{
+                        li{
+                            a{
+                                img{
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}  

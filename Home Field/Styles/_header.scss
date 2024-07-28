@@ -80,6 +80,14 @@ header{
             }
             form{
                 ul{
+                    width: 65%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: #00adef;
+                    padding: 10%;
+                    border-radius: 10% 0% 0% 10%;
                     li{
                         label{
                             font-family: Montserrat-Bold;

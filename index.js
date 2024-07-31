@@ -25,14 +25,7 @@ function Login(){
 register.addEventListener('click',showForm);
 login.addEventListener('click',Login);
 
-// variables de los datos
-let nameregister = document.getElementById( 'nameregister');
-let emailregister = document.getElementById('emailregister');
-let passwordregister = document.getElementById('passwordregister');
-
-
 //Evento para obtener los datos del formulario registro
-
 let send_register = document.querySelector('input[type="submit"]');
 
 class User_Form_Regist{
@@ -44,6 +37,8 @@ class User_Form_Regist{
     };
 }
 
+let new_user= '';
+
 function register_User(){
     let nameregister = document.getElementById( 'nameregister').value;
     let emailregister = document.getElementById('emailregister').value;
@@ -52,7 +47,17 @@ function register_User(){
     console.log(nameregister,emailregister,passwordregister, id_user);
    
     
-    let new_user = new User_Form_Regist(id_user,nameregister,emailregister,passwordregister);
-    console.log(new_user);
+    new_user = new User_Form_Regist(id_user,nameregister,emailregister,passwordregister);
+    
+   return new_user;      
 } 
 send_register.addEventListener('click', register_User);
+send_register.addEventListener('click', ()=>{
+    if(new_user == ''){
+        console.log('sin objeto');
+    }else{    
+        console.log();
+        export default  new_user;
+    }
+});
+//export default new_user

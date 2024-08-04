@@ -161,7 +161,7 @@ header .init .login .icons ul li a img {
   height: 35px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   header .init {
     display: flex;
     flex-direction: column;

@@ -28,10 +28,19 @@ app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname,  './Home_Field/public/index.html'));
 });
 
+const emailValidator = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+};
+
 app.post('/submit', async (req, res) => {
-    const { id_user,name, email, password } = req.body;
-  
-    const newData = new Post({ id_user,name, email, password });
+    const { id_user,username, email, password } = req.body;
+    
+    if (!emailValidator(email)) {
+        return res.status(400).json({ error: 'Invalid email address' });
+      }
+
+    const newData = new Post({ id_user, username, email, password });
     try {
       const savedData = await newData.save();
       res.json({ message: 'Datos guardados exitosamente', data: savedData });
@@ -49,6 +58,4 @@ async function main() {
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
-  });
-  
-export default app;
+  });  

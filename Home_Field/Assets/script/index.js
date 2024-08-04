@@ -52,6 +52,7 @@ constructor(id_user, username, email, password){
 
 let new_user= '';
 
+// registro y envio de los datos a la base de datos
 async function register_User(){
 let nameregister = document.getElementById( 'nameregister').value;
 let emailregister = document.getElementById('emailregister').value;
@@ -76,7 +77,7 @@ try {
         const result = await response.json();
         console.log('Datos enviados exitosamente:', result);
       } else {
-        console.error('Error al enviar los datos:', response.statusText);
+        console.log('Error al enviar los datos:', response.statusText);
       }
     } catch (error) {
       console.error('Error al enviar los datos:', error);
@@ -85,4 +86,11 @@ try {
 } 
 send_register.addEventListener('click', register_User);
 
-
+let send_login = document.getElementById('sendlogin');
+console.log(send_login);
+async function login_user(){
+  let email_user = document.getElementById('emaillogin').value;
+  let password_user = document.getElementById('passwordlogin').value;
+  console.log(email_user,password_user);
+}
+send_login.addEventListener('click', login_user);

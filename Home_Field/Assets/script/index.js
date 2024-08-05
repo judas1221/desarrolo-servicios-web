@@ -65,7 +65,7 @@ new_user = new User_Form_Regist(id_user,nameregister,emailregister,passwordregis
 console.log(new_user);
 
 try {
-    const response = await fetch('/submit', {
+    const response = await fetch('/agregar-persona', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -94,3 +94,21 @@ async function login_user(){
   console.log(email_user,password_user);
 }
 send_login.addEventListener('click', login_user);
+
+const url = 'http://localhost:3000/agregar-persona';
+
+/*fetch(url)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Mostrar los datos en la página
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+    })
+    .catch(error => {
+        console.error('Hubo un problema con la petición fetch:', error);
+    });
+*/
